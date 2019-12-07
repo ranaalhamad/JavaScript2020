@@ -1,0 +1,27 @@
+.one{
+	border:solid 5px red; 
+	width:100px;
+	height: 100px;
+	margin:30px;
+	transition: width 4s;
+	transition-delay: 1s;
+	/*transform: scale(2,3);*/
+	/*transform: translate(100px,100px);*/
+/*	transform: skew(15deg,30deg);
+
+*/
+ 
+}
+.two{
+	border:solid 5px red; 
+	width:100px;
+	height: 100px;
+   transform: rotate(45deg);
+   
+}
+	
+.one:hover{
+	width:300px;
+
+}
+

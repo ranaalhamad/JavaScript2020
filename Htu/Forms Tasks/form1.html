@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>APPLICANT PERSONAL INFORMATION</title>
+
+<script>
+function AddFunction() {
+  document.getElementById("AdditionalName").outerHTML  = '<input type="text" placeholder="Additional Name" >';
+}
+
+function validateForm() {
+  var email = document.forms["myForm"]["email"].value;
+  var Confirm_Email = document.forms["myForm"]["Confirm_Email"].value;
+
+  if (email != Confirm_Email) {
+    alert("Email and Confirm Email Not match please Check again");
+
+    return false;
+  }
+}
+</script>
+
+</head>
+
+
+<body>
+<fieldset>
+	<form name="myForm" action="form2.html" onsubmit="return validateForm()" method="post">
+
+
+		<h1>APPLICANT PERSONAL INFORMATION</h1>
+		<hr>
+		<label>Name*</label> &nbsp &nbsp &nbsp &#160
+
+	
+<input type="text" placeholder="Given Name(First Name)" >  &nbsp &#160 &nbsp &nbsp   &#160  &nbsp                 
+<input type="text" placeholder="Middle Name" > &nbsp &#160 &nbsp &nbsp   &#160 &nbsp
+<input type="text" placeholder="Surname (Last Name)" >
+
+
+<br>
+<br>
+
+<button id="add_button" type="button" onclick="AddFunction()" >+ Add</button>  <label> if you have more than one first name or last name, then please add it here </label>
+<br>
+<br>
+<div id="AdditionalName"></div>
+
+<br>
+
+    
+    <br>
+
+    <label>Full name in native alaphabet*</label> &nbsp &nbsp
+    <input type="text"placeholder="full Name">
+    <hr>
+
+     
+<label>Date of Birth*</label> &nbsp &#160 &nbsp &nbsp   &#160  &nbsp
+
+
+
+   <input type="Month" placeholder="-Month"> &nbsp &#160 &nbsp &nbsp   &#160  &nbsp
+    <input type="Day" placeholder="-Day-" min="1" max="31" > &nbsp &#160 &nbsp &nbsp   &#160  &nbsp
+    <input type="year" placeholder="year" min="1900" max="2019" >
+    <hr>
+
+<label>Gender*</label> &nbsp &#160 &nbsp &nbsp   &#160  &nbsp
+
+
+  <input type="radio" name="gender" value="male"> Male
+  <input type="radio" name="gender" value="female"> Female 
+  <br>
+  <hr>
+  <label>Email*</label> &nbsp &#160 &nbsp &nbsp   &#160  &nbsp
+<input name="email" type="email" placeholder="Email" required> &nbsp 
+<input name="Confirm_Email"  type="email" placeholder="ConfirmEmail">
+<br>
+<hr>
+<label>Place of Birth (country/state/city)</label> &nbsp &#160 &nbsp &nbsp   &#160  &nbsp
+
+<select>
+<option value="" disabled selected>Please Select</option>
+<option >Amman</option>
+<option>Irbid</option>
+<option>Al Karak</option>
+<option>Al Aqaba</option>
+</select> &nbsp &nbsp &#160 &nbsp &nbsp   &#160  &nbsp
+<input type="text " placeholder="state name"> &nbsp &nbsp &#160 &nbsp &nbsp   &#160  &nbsp
+<input type="text " placeholder="city">
+
+
+<br>
+<hr>
+<label>Nationality*</label> &nbsp &#160 &nbsp &nbsp   &#160  &nbsp
+<input type="text" name="">
+<br>
+<hr>
+<label>Do you have an alias or maiden name?*</label> &nbsp &#160 &nbsp &nbsp   &#160  &nbsp
+<input type="radio" name="">yes
+<input type="radio" name="">no
+<br>
+<hr>
+<label>Do you have telecode represents your name?*</label> &nbsp &#160 &nbsp &nbsp   &#160  &nbsp
+<input type="radio" name="">yes
+<input type="radio" name="">no
+<br>
+<hr>
+<label>Marital Status*</label> &nbsp &#160 &nbsp &nbsp   &#160  &nbsp
+<select>
+<option value="" disabled selected>Please Select </option>
+<option>Single</option>
+<option>Married</option>
+</select>
+
+<br>
+<hr>
+
+<input type="submit" value="Submit">
+	</form>
+</fieldset>
+
+
+
+
+
+</fieldset>
+</body>
+</html>

@@ -1,0 +1,91 @@
+ .jumbotron{
+	background-image: url("one.jpg");
+	background-repeat: no-repeat;
+	background-size:cover;
+	height: 100vh;
+	color: white;
+	padding:230px;
+}
+.navbar-nav li a{
+	color:#11cbd7;
+}
+.display-4{
+	font-size: 40px;
+	color:white;
+	text-align: center;
+}
+#form1{
+	background-color: white;
+	padding: 20px;
+}
+#blue{
+	background-color: #11cbd7;
+	border:  #11cbd7;
+}
+.bottom{
+	text-align: center;
+}
+.fas{
+	font-size: 30px;
+
+}
+.row .col h2 ,h1{
+	color: #11cbd7;
+}
+.midd{text-align: center;
+}
+
+#circle{
+	border-radius: 50%;
+	width:30px;
+	height: 30px;
+}
+.pr{
+	color: #ccc;
+}
+.pictures{
+	margin-bottom: 20px;
+}
+.container-two{
+	background-color: #11cbd7;
+	height: 200px;
+	color: white;
+	padding: 50px;
+}
+.foot{
+	color: #11cbd7;
+}
+.col-3 h6{
+	line-height:30px;
+}
+.social{
+	font-size: 20px;
+	color: lightblue;
+
+}
+.midd p{
+	color: gray;
+}
+.info{
+	color: #11cbd7;
+}
+#button-addon2{
+	background-color: #11cbd7;
+	color: white;
+	border:white;
+}
+#details{
+	font-size: 10px;
+	color:gray;
+}
+.fas fa-heart{
+	font-size: 5px;
+}
+#details1{
+	font-size: 15px;
+	color: gray;
+}
+.ab{
+	font-size:40px;
+	
+}

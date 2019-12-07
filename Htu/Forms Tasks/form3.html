@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <link rel="stylesheet" href="build/css/intlTelInput.css">
+  <link rel="stylesheet" href="build/css/demo.css">
+	
+	<title></title>
+</head>
+<body>
+	<fieldset>
+		<form>
+			<h1>CONTACT INFORMATION</h1>
+			<h2>Adress of the person applying for the visa </h2>
+			<hr>
+			<label>phone number</label> &nbsp &#160 &nbsp &nbsp   &#160  &nbsp &nbsp &#160 &nbsp &nbsp   &#160  &nbsp  &#160  &nbsp  &nbsp  &#160  &nbsp
+
+			   <input id="phone" name="phone" type="tel">
+			   
+			   <input id="phone1" name="phone" type="tel">
+
+
+			   <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<hr>
+<p>Home Adress</p>
+&nbsp  &nbsp<LABEL>Street Adress</LABEL> &nbsp &#160 &nbsp &nbsp   &#160  &nbsp &nbsp &#160 &nbsp &nbsp   &#160  &nbsp  &nbsp   &#160  &nbsp &#160  &nbsp
+<input type="text" name="">
+<br>
+<br>
+&nbsp  &nbsp<LABEL>Apartment/Suit/Unit number</LABEL> &nbsp &#160 &nbsp &nbsp      
+<input type="text" name="">
+<br>
+<br>
+&nbsp &nbsp<LABEL>City</LABEL> &nbsp &#160 &nbsp &nbsp   &#160  &nbsp &nbsp &#160 &nbsp &nbsp   &#160  &nbsp &#160 &nbsp &nbsp   &#160  &nbsp &nbsp &nbsp   &#160     &#160  &nbsp  &nbsp &nbsp
+
+<input type="text" name="">
+<br>
+<br>
+&nbsp &nbsp <LABEL>ZIP or Postal Code</LABEL> &nbsp &#160 &nbsp &nbsp   &#160  &nbsp &nbsp &#160 &nbsp &nbsp   &#160  &nbsp
+<input type="text" name="">
+<br>
+<br>
+&nbsp &nbsp <label>Country</label> &nbsp &#160 &nbsp &nbsp   &#160  &nbsp &nbsp &#160  &#160 &nbsp &nbsp   &#160  &nbsp &nbsp &#160  &#160  &nbsp &nbsp &#160 &#160  &nbsp 
+<select>
+	<option value="" disabled selected> please select</option>
+<option>california</option>
+<option>Florida</option>
+<option>Texas</option>
+</select>
+<br>
+<hr>
+<label>If your mailing adress diffrent from your home adress</label> &nbsp &#160 &nbsp &nbsp   &#160  &nbsp
+<input type="radio" >Yes &nbsp &#160 &nbsp &nbsp   &#160  &nbsp
+<input type="radio" >No
+<br>
+<hr>
+
+
+
+		</form>
+
+	</fieldset>
+
+	<script src="build/js/intlTelInput.js"></script>
+  <script>
+    var input = document.querySelector("phone");
+    window.intlTelInput(input, {
+      // allowDropdown: false,
+      // autoHideDialCode: false,
+      // autoPlaceholder: "off",
+      dropdownContainer: document.body,
+      // excludeCountries: ["us"],
+      // formatOnDisplay: false,
+      // geoIpLookup: function(callback) {
+      //   $.get("http://ipinfo.io", function() {}, "jsonp").always(function(resp) {
+      //     var countryCode = (resp && resp.country) ? resp.country : "";
+      //     callback(countryCode);
+      //   });
+      // },
+      // hiddenInput: "full_number",
+       initialCountry: "JO",
+      // localizedCountries: { 'de': 'Deutschland' },
+      // nationalMode: false,
+      // onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
+      // placeholderNumberType: "MOBILE",
+      // preferredCountries: ['cn', 'jp'],
+      // separateDialCode: true,
+      utilsScript: "build/js/utils.js",
+    });
+	
+	    var input = document.querySelector("#phone1");
+    window.intlTelInput(input, {
+      // allowDropdown: false,
+      // autoHideDialCode: false,
+      // autoPlaceholder: "off",
+      dropdownContainer: document.body,
+      // excludeCountries: ["us"],
+      // formatOnDisplay: false,
+      // geoIpLookup: function(callback) {
+      //   $.get("http://ipinfo.io", function() {}, "jsonp").always(function(resp) {
+      //     var countryCode = (resp && resp.country) ? resp.country : "";
+      //     callback(countryCode);
+      //   });
+      // },
+      // hiddenInput: "full_number",
+       initialCountry: "JO",
+      // localizedCountries: { 'de': 'Deutschland' },
+      // nationalMode: false,
+      // onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
+      // placeholderNumberType: "MOBILE",
+      // preferredCountries: ['cn', 'jp'],
+      // separateDialCode: true,
+      utilsScript: "build/js/utils.js",
+    });
+  </script>
+
+</body>
+</html>

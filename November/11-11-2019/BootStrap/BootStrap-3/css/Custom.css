@@ -1,0 +1,29 @@
+.row-fluid{
+	display: flex;
+text-align: center;
+}
+.fas{
+	font-size: 40px;
+	color:white;
+	background-color: black;
+	padding: 50px;
+	margin:30px;
+	border:solid 5px green;
+	
+}
+ 
+ .fas:hover{
+ 	background-color: white;
+ 	color: red;
+ }
+  .span4 h5{
+  	border-top:solid 3px green;
+  	border-bottom:solid 3px green;
+  	color:white;
+  	background-color: black
+  }
+ .span4 h5:hover{
+
+ 	color: red;
+ 	background-color: white;
+  }
