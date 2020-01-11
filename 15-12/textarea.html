@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<div style="text-align: center;">
+   <textarea id="textcontent" style="width: 455px; height: 200px; "></textarea>
+   <div id="countWord"></div>
+   <button id="btn1" style="display: none" onclick="fun1()">send</button>
+</div>
+
+
+<script type="text/javascript">
+		
+function countWord( val ){
+    var wom = val.match(/\S+/g);
+    return {
+        words : wom ? wom.length : 0
+    };
+}
+var textContent = document.getElementById("textcontent");
+var showWordCount   = document.getElementById("countWord");
+textContent.addEventListener("input", function(){
+  var v = countWord( this.value );
+  showWordCount.innerHTML = (
+      "<br>Words: "+ v.words
+  );
+
+
+
+  if(v.words<20){
+  	document.getElementById("textcontent").style.backgroundColor="red";
+
+  }
+  else{
+  	document.getElementById("textcontent").style.backgroundColor="green";
+  	document.getElementById("btn1").style.display='block';}
+}, false);
+
+function fun1(){
+	if (window.confirm("Are you sure")){
+		window.open("exit.html","");
+	}
+else{
+document.getElementById("textcontent").value="";
+document.getElementById("countWord").value=0;
+}
+}
+</script>
+</body>
+</html>

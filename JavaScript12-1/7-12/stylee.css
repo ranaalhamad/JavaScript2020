@@ -1,29 +1,48 @@
+ var d = new Date().getTime();
+	  
+      for(y=1; y<=100; y++){
+ 	  
+	    }
+       var w = new Date().getTime();
+	  var u = w- d;
+      document.getElementById("a").innerHTML = u ;
 
-.all div{
-	display: inline-block;
-}
 
-#one{
-	
-	width: 100px;
-	background-color: green;
-	text-align: center;
-}
-#two{
-	
-	width: 100px;
-	background-color: red;
-	text-align: center;
-}
-#three{
-	
-	width: 100px;
-	background-color: blue;
-	text-align: center;
-}
-#four{
+      var d1 = new Date().getTime();
+	  
+      for(t=1; t<=1000; t++){
+ 	  
+	    }
+      var w1 = new Date().getTime();
+	  var u1 = w1- d1;
+      document.getElementById("b").innerHTML = u1  ;
 
-	width: 100px;
-	background-color: green;
-	text-align: center;
-}
+
+      var d2 = new Date().getTime();
+	  
+      for(v=1; v<=10000; v++){
+ 	  
+	    }
+       var w2 = new Date().getTime();
+	  var u2 = w2- d2;
+      document.getElementById("c").innerHTML = u2 ;
+
+
+
+      var d3 = new Date().getTime();
+	  
+      for(a=1; a<=100000; a++){
+ 	  
+	    }
+       var w3 = new Date().getTime();
+	  var u3 = w3- d3;
+      document.getElementById("d").innerHTML = u3  ;
+
+      var dm = new Date().getTime();
+	  
+      for(a=1; a<=100000; a++){
+ 	  
+	    }
+       var wm= new Date().getTime();
+	  var um = wm- dm;
+      document.getElementById("e").innerHTML = um  ;

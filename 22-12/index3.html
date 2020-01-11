@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<form name="Form1" onsubmit="return submitA()">
+Select a file: <br>
+<input type="file" name="myFile" >
+<button>Add</button>
+
+</form>
+<div id="demo"></div>
+<script type="text/javascript">
+	
+function submitA(){
+
+	
+			var form = document.Form1;
+			var pic = form.elements["myFile"].value;
+
+		localStorage.setItem("picture","pict");
+		var name=localStorage.getItem("picture");
+
+	var path="file:///C:/Users/Rana%20Al%20Hamad/Desktop/capstone%20-%20Copy/img/";
+	var x=pic.split('\\');
+
+var t="<img src='"+path+x[2]+"'>";  
+document.getElementById("demo").innerHTML+=t;
+return false;
+
+}
+
+
+
+
+
+</script>
+</body>
+</html>

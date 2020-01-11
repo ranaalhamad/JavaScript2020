@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="fontawesome-free-5.11.2-web/css/all.css">
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+		$("document").ready(function (){
+
+			$("#plus").click(function(){
+        var num1=$("#num1").val();
+        var num2=$("#num2").val();
+        var result=parseInt(num1)+parseInt(num2);
+        $("#result").val(result);
+});
+       $("#min").click(function(){
+        var num1=$("#num1").val();
+        var num2=$("#num2").val();
+        var result=parseInt(num1)-parseInt(num2);
+        $("#result").val(result);
+});
+        $("#multi").click(function(){
+        var num1=$("#num1").val();
+        var num2=$("#num2").val();
+        var result=parseInt(num1)*parseInt(num2);
+        $("#result").val(result);
+});
+        $("#d").click(function(){
+        var num1=$("#num1").val();
+        var num2=$("#num2").val();
+        var result=parseInt(num1)/parseInt(num2);
+        $("#result").val(result);
+});
+        // Q6
+        $("#txt").click(function(){
+         var text=$("txt").val();
+});
+     $("#check").click(function(){
+     	$("#sub").show();
+});
+        // Q7
+      $(window).scroll(function(){
+       if($(this).scrollTop()>40){
+      	$("#but").fadeIn();
+        }
+       else{
+    		$("#but").fadeOut();
+      }
+      });
+      $("#but").click(function(){
+      	$("html,body").animate({scrollTop :0},800);
+      });
+      //Q8
+      var max_fields=100; //maximum input boxes allowed
+	var wrapper=$(".input_fields_wrap"); //Fields wrapper
+	var add_button=$(".add_field_button"); //Add button ID
+	
+	var x = 1; //initlal text box count
+	$(add_button).click(function(e){ //on add input button click
+		e.preventDefault();
+		if(x < max_fields){ //max input box allowed
+			x++; //text box increment
+			$(wrapper).append('<div><input type="text" name="mytext[]"/><a href="#" class="remove_field"><i class="p fas fa-minus-circle"></i></a></div>'); //add input box
+		}
+	});
+	
+	$(wrapper).on("click",".remove_field", function(e){ //user click on remove text
+		e.preventDefault(); $(this).parent('div').remove(); x--;
+	});
+
+ });
+</script>
+
+</head>
+<body>
+<!-- Q5 -->
+<form>
+	<label>number1</label>
+	<input type="text" id="num1"><br><br>
+	<label>number2</label>
+	<input type="text" id="num2"><br><br>
+	<button type="button" id="plus">+</button>
+	<button type="button" id="min">-</button>
+	<button type="button" id="multi">*</button>
+	<button type="button" id="d">/</button><br><br>
+	<label >Result</label>
+	<input type="text" id="result" value=""><br><br><hr>
+</form>
+<!-- Q6 -->
+<label>Talke about your self:</label><br><br>
+<textarea id="txt"></textarea><br><br>
+<input type="checkbox" id="check"><label>I accept the rules</label><br><br>
+<input type="submit" id="sub"><br><br><br><hr>
+<!-- Q8 -->
+<div class="input_fields_wrap">
+    <button class="add_field_button">Add<i class="p fas fa-plus-circle"></i></button>
+    
+</div>
+</body>
+</html>

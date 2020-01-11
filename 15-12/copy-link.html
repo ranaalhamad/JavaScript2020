@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<p>Aenean vel massa tellus. Aliquam imperdiet ante a justo luctus et bibendum erat porta. Morbi varius, erat et cursus ornare, elit augue bibendum leo, sed imperdiet nulla risus ut ipsum. Maecenas laoreet neque vitae magna porta sed euismod urna ornare. Nulla facilisi. Maecenas congue ligula eu arcu rhoncus volutpat. Etiam pretium pulvinar sapien, et ultrices augue euismod sagittis. Pellentesque sodales, velit tempor pharetra ultricies, lacus odio mattis ligula, vel sollicitudin erat nisl sed nisi. Pellentesque vestibulum suscipit libero, sit amet scelerisque purus aliquam vulputate. Etiam semper mauris ac felis convallis volutpat dictum ante placerat. Proin tempus elementum nisl ac eleifend. In hac habitasse platea dictumst. Duis et neque at mi lacinia luctus non ut neque. Praesent mollis metus at quam ornare bibendum. Cras augue tortor, tempor vitae adipiscing at, pulvinar vel massa. Curabitur et orci massa, sit amet malesuada diam. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis vitae orci id lectus convallis tempus vel quis mauris.</p>
+<a href="https://bavotasan.com/2010/add-a-copyright-notice-to-copied-text/">
+ <script type="text/javascript">
+function addLink() {
+	var body_element = document.getElementsByTagName('body')[0];
+	var selection;
+	selection = window.getSelection();
+	var pagelink = "<br /><br /> Read more at: <a href='"+document.location.href+"'>"+document.location.href+"</a><br />Copyright &copy; RANA ALHAMAD"; // change this if you want
+	var copytext = selection + pagelink;
+	var newdiv = document.createElement('div');
+	newdiv.style.position='absolute';
+	newdiv.style.left='-99999px';
+	body_element.appendChild(newdiv);
+	newdiv.innerHTML = copytext;
+	selection.selectAllChildren(newdiv);
+	window.setTimeout(function() {
+		body_element.removeChild(newdiv);
+	},0);
+}
+document.oncopy = addLink;
+</script>
+
+</body>
+</html>

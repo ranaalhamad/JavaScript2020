@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="fontawesome-free-5.11.2-web/css/all.css">
+	<!-- <style type="text/css">
+		p{
+			display: none;
+		}
+		#one{
+			display: inline-block;
+			margin-left: 80px;
+		}
+		#two{
+			display: inline-block;
+			margin-left: 80px;
+		}
+		.a{
+			display: none;
+		}
+		.sel3{
+			display: none;
+		}
+		#sub{
+			display: none;
+		}
+		.p{
+			color: red;
+		}
+		</style> -->
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+		$("document").ready(function (){
+			// Q1
+			 	// $("#btn").click(function(){
+		 	 // 	$("p").show(1000);
+		 	 // });
+			 	// Q2
+			 	// $("#btn1").click(function(){
+			 	// 	$("#j1").css({"color":"green","border":"solid"});
+			 	// 	$("#j2").css({"color":"red","border":"solid"});
+			 	// 	$("#j3").css({"color":"red","border":"solid"});
+			 	// });
+			 	// Q3
+			 	// $(".amman").mouseover(function(){
+			 	// 	$(".amman").css({"color":"green","border":"solid"});
+			 	// });
+			 	// $(".romtha").mouseover(function(){
+			 	// 	$(".romtha").css({"color":"green","border":"solid"});
+			 	// });
+			 	// $(".salt").mouseover(function(){
+			 	// 	$(".salt").css({"color":"green","border":"solid"});
+			 	// });
+			 	// $(".irbid").mouseover(function(){
+			 	// 	$(".irbid").css({"color":"green","border":"solid"});
+			 	// });
+			 	
+		 	 //    $(".amman").mouseout(function(){
+			 	// 	$(".amman").css({"color":"black","border":"solid white"});
+			 	// });
+			 	// $(".romtha").mouseout(function(){
+			 	// 	$(".romtha").css({"color":"black","border":"solid white"});
+			 	// });
+			 	// $(".salt").mouseout(function(){
+			 	// 	$(".salt").css({"color":"black","border":"solid white"});
+			 	// });
+			 	// $(".irbid").mouseout(function(){
+			 	// 	$(".irbid").css({"color":"black","border":"solid white"});
+			 	// });
+			 	// Q4
+        // $("#sel1").change(function(){
+        // 	var sel=$("#sel1").val();
+        // 	if(sel=="USA"){
+        //       $(".sel2").hide();
+        //       $(".a").show();
+        //   	}
+        //   	else if(sel=="Jordan"){
+        //   		$(".sel2").show();
+        //   		$(".sel3").hide();
+        //   		$(".a").hide();
+        //   	}
+        //   	else if(sel=="Qater"){
+        //   		$(".sel3").show();
+        //         $(".a").hide();
+        //   	}
+        // });
+        // Q5
+        $("#plus").click(function(){
+        var num1=$("#num1").val();
+        var num2=$("#num2").val();
+        var result=parseInt(num1)+parseInt(num2);
+        $("#result").val(result);
+});
+       $("#min").click(function(){
+        var num1=$("#num1").val();
+        var num2=$("#num2").val();
+        var result=parseInt(num1)-parseInt(num2);
+        $("#result").val(result);
+});
+        $("#multi").click(function(){
+        var num1=$("#num1").val();
+        var num2=$("#num2").val();
+        var result=parseInt(num1)*parseInt(num2);
+        $("#result").val(result);
+});
+        $("#d").click(function(){
+        var num1=$("#num1").val();
+        var num2=$("#num2").val();
+        var result=parseInt(num1)/parseInt(num2);
+        $("#result").val(result);
+});
+        // Q6
+        $("#txt").click(function(){
+         var text=$("txt").val();
+});
+     $("#check").click(function(){
+     	$("#sub").show();
+});
+        // Q7
+      $(window).scroll(function(){
+       if($(this).scrollTop()>40){
+      	$("#but").fadeIn();
+        }
+       else{
+    		$("#but").fadeOut();
+      }
+      });
+      $("#but").click(function(){
+      	$("html,body").animate({scrollTop :0},800);
+      });
+      //Q8
+      var max_fields=100; //maximum input boxes allowed
+	var wrapper=$(".input_fields_wrap"); //Fields wrapper
+	var add_button=$(".add_field_button"); //Add button ID
+	
+	var x = 1; //initlal text box count
+	$(add_button).click(function(e){ //on add input button click
+		e.preventDefault();
+		if(x < max_fields){ //max input box allowed
+			x++; //text box increment
+			$(wrapper).append('<div><input type="text" name="mytext[]"/><a href="#" class="remove_field"><i class="p fas fa-minus-circle"></i></a></div>'); //add input box
+		}
+	});
+	
+	$(wrapper).on("click",".remove_field", function(e){ //user click on remove text
+		e.preventDefault(); $(this).parent('div').remove(); x--;
+	});
+
+ });
+</script>
+</head>
+<body>
+	<!-- Q1 -->
+<!-- <div>What is HTU?</div>
+<button id="btn">Show</button>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500</p> -->
+<!-- Q2 -->
+<!-- <div>What is jquery?</div>
+<input type="radio" name="n1"><span id="j1">JS</span><br>
+<input type="radio" name="n1"><span id="j2">HTML</span><br>
+<input type="radio" name="n1"><span id="j3">CSS</span><br>
+<button id="btn1">Test</button><br><br> -->
+<!-- Q3 -->
+<!-- <div id="one">
+<div class="amman">Amman</div>
+<div class="irbid">Irbid</div>
+<div class="salt">Salt</div>
+<div class="romtha">Romtha</div>
+</div>
+<div id="two">
+<div class="salt">Mountin</div>
+<div class="amman">Malls</div>
+<div class="irbid">Yoghert</div>
+<div class="romtha">Kbab</div>
+</div><br><br> -->
+<!-- Q4 -->
+<!-- <form>
+	<label>Country</label>
+	<select id="sel1">
+		<option class="jd">Jordan</option>
+		<option>USA</option>
+		<option class="qa">Qater</option>
+	</select>
+	<label class="sel2">City</label>
+	<select class="sel2">
+		<option>Amman</option>
+	</select>
+	<select class="sel3">
+		<option>Aldoha</option>
+	</select>
+	<label class="a">State</label>
+	<select class="a">
+		<option>las vagase</option>
+	</select>
+</form><br><br> -->
+<!-- Q5 -->
+<form>
+	<label>number1</label>
+	<input type="text" id="num1"><br><br>
+	<label>number2</label>
+	<input type="text" id="num2"><br><br>
+	<button type="button" id="plus">+</button>
+	<button type="button" id="min">-</button>
+	<button type="button" id="multi">*</button>
+	<button type="button" id="d">/</button><br><br>
+	<label >Result</label>
+	<input type="text" id="result" value=""><br><br><hr>
+</form>
+<!-- Q6 -->
+<label>Talke about your self:</label><br><br>
+<textarea id="txt"></textarea><br><br>
+<input type="checkbox" id="check"><label>I accept the rules</label><br><br>
+<input type="submit" id="sub"><br><br><br><hr>
+<!-- Q7 -->
+<!-- <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</span>
+<span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</span>
+<span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</span>
+<span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</span>
+<span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</span><br><br><br>
+<button type="button" id="but"><i class="fas fa-arrow-up"></i></button><br><br><br><hr> -->
+<!-- Q8 -->
+<div class="input_fields_wrap">
+    <button class="add_field_button">Add<i class="p fas fa-plus-circle"></i></button>
+    
+</div>
+</body>
+</html>

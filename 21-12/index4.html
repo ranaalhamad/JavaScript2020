@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<div id="results"></div>
+	<form name="quizForm" onsubmit="return submitAnswers()">
+	
+
+<br><br>
+<label>What you will do after 10 years ?</label><br>
+	<input type="radio" name="answer3" value="Married and set at home">Married & set at home<br>
+	<input type="radio" name="answer3" value="Creat a startup Company">Creat a startup Company<br>
+	<input type="radio" name="answer3" value="Finish a PHD Degree">Finish a PHD Degree<br><br><hr>
+	<input type="Submit" value="submitAnswers" >
+
+		<br><br>
+
+	</form>
+<script type="text/javascript">
+	var url_string=window.location;
+	var url=new URL(url_string);
+	var mark=url.searchParams.get("mark");
+	
+     
+ 		function submitAnswers() {
+ 			var form = document.quizForm;
+			var q2 = form.elements['answer3'].value;
+		
+			
+			if(q2 == "Finish a PHD Degree"){
+				mark++;
+			}
+			
+			
+			window.location.href='index5.html?mark='+mark;
+			return false;
+		}
+ 			
+
+ 	</script>
+</body>
+</html>

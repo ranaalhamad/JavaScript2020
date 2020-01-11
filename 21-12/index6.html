@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<div id="results"></div>
+	<form name="quizForm" onsubmit="return submitAnswers()">
+	
+
+<br><br>
+<label>What your kind ?</label><br>
+		<input type="radio" name="answer2" value="Animal">Animal<br>
+		<input type="radio" name="answer2" value="Machine">Machine<br>
+		<input type="radio" name="answer2" value="Human">Human<br>
+		<input type="radio" name="answer2" value="Other">Other<br>
+
+	<input type="Submit" value="submitAnswers" >
+
+		<br><br>
+
+	</form>
+<script type="text/javascript">
+	var url_string=window.location;
+	var url=new URL(url_string);
+	var mark=url.searchParams.get("mark");
+	
+     
+ 		function submitAnswers() {
+ 			var form = document.quizForm;
+			var q3 = form.elements['answer2'].value;
+		
+			
+			if(q3 == "Animal"){
+				mark++;
+			}
+			
+			
+			window.location.href='process456.html?mark='+mark;
+			return false;
+		}
+ 			
+
+ 	</script>
+</body>
+</html>

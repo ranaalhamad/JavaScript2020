@@ -1,0 +1,126 @@
+body{font-family: cursive;
+}
+html{
+	scroll-behavior: smooth;
+}
+.head{
+	background-color: #406016;
+	font-size: 20px;
+}
+
+.nav-link{
+	text-decoration: none;
+	color: white;
+}
+
+.navbar-nav{
+	font-size: 17px;
+}
+.navbar-brand{
+	text-decoration: none;
+	color: white;
+	font-size: 35px;
+}
+.navbar-brand:hover{
+	color: white;
+}
+.nav-link:hover{
+	color:black;
+	background-color: white;
+}
+
+.jumbotron{
+background-image:url("one.png" ) ;
+	background-repeat: no-repeat;
+	background-size:cover;
+	color: white;
+	padding:230px;
+}
+.mycontainer{
+	background-color: #406016;
+	opacity: .7;
+	text-align: center;
+	width: 75%;
+	height: 200px;
+	padding: 5%;
+}
+.btn{
+	color: white;
+	border-color: #406016;
+	   opacity: .8;
+}
+.mycontainer2{
+text-align: center;
+border:red ;
+}
+.menu{
+	background-color:  #406016;
+	text-align: center;
+	color: white;
+}
+.men{
+	width: 350px;
+	height: 350px;
+	border-radius: 30px;
+	margin: 10px;
+    border:solid #aa151b 10px;
+}
+.men:hover{
+	opacity: .4;
+}
+.men2{
+	width: 80%;
+	border-radius: 30px;
+	}
+	.soc{
+		width: 150px;
+		height: 150px;
+		border-radius:100%;
+	}
+	.mycol{
+		background-color: #406016;
+		color: white;
+	}
+		.mycol:hover{
+			color: #406016;
+			background-color: white;
+			font-size:15px;	
+		}
+.des h3:hover{
+	background-color: #406016;
+	color: white;
+	border-right: solid red 10px;
+}
+.myfoooter{
+	width: 100%;
+	color:  #406016;
+	padding-top: 70px;
+}
+.last{
+	color: white;
+background-color: #406016;
+font-size: 15px;
+}
+.bord{
+	background-color:  #406016;
+	color: white;
+}
+.mysocial{
+	padding: 40px;
+}
+.des{
+	animation-name: co;
+	transition-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-duration: 1s;
+	animation-delay: 1s;
+}
+@keyframes co{
+	0% {color: red;}
+	25% {color:#406016;}
+	50%  {color: red;}
+	100% {color: #406016;}
+}
+.margin-top{
+	margin-top:  100px;
+}

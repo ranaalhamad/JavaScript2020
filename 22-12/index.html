@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<h1>You logged In</h1>
+	
+
+<script type="text/javascript">
+
+		var user = localStorage.getItem("username");
+		var pass = localStorage.getItem("password");
+			if( user != "Admin" && pass != "123456"){
+				
+			
+				window.location.href="login.html";
+				
+			}
+			function rmv(){
+				localStorage.removeItem("username");
+				localStorage.removeItem("password");
+				window.location.href="login.html";
+			}
+</script>
+<button onclick="rmv()"> Logout</button> 
+</body>
+</html>

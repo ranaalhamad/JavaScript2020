@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	 <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  		  <link rel="stylesheet" type="text/css" href="css/custom.css">
+</head>
+<body>
+	<form>
+	<input type="number"  id="num1">
+	<input type="number"  id="num2">
+<div>
+	<button type="button" onclick="submitform()">+</button>
+	<button type="button" onclick="submitform1()">-</button>
+	<button type="button" onclick="submitform2()">*</button>
+	<button type="button" onclick="submitform3()">/</button>
+</div>
+</form>
+
+<div id="demo"></div>
+<script type="text/javascript">
+	function submitform(){
+		var n1=document.getElementById("num1").value;
+		var n2=document.getElementById("num2").value;
+		var sum=parseInt(n1)+parseInt(n2);
+		document.getElementById("demo").innerHTML=sum;
+	}	
+	function submitform1(){
+		var n1=document.getElementById("num1").value;
+		var n2=document.getElementById("num2").value;
+		var sum=parseInt(n1)-parseInt(n2);
+		document.getElementById("demo").innerHTML=sum;
+	}	
+	function submitform2(){
+		var n1=document.getElementById("num1").value;
+		var n2=document.getElementById("num2").value;
+		var sum=parseInt(n1)*parseInt(n2);
+		document.getElementById("demo").innerHTML=sum;
+	}
+		function submitform3(){
+		var n1=document.getElementById("num1").value;
+		var n2=document.getElementById("num2").value;
+		var sum=parseInt(n1)/parseInt(n2);
+		document.getElementById("demo").innerHTML=sum;
+	}
+</script>
+</body>
+</html>

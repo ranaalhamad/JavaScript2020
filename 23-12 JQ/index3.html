@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="jquery.js"></script>
+
+	<script type="text/javascript">
+		
+
+		$("document").ready(function(){ 
+
+
+		   $("#bt1").click(function(){
+				$("#is").show("1000");
+			});
+
+
+
+		  $("#bt1").click(function(){
+						$("JS").show("1000");
+					});
+
+		 $("#bt2").click(function(){
+   	$("#j1").prop("checked",true);
+   	$("#s1").css("background-color","green");
+   	$("#s2").css("background-color","red");
+   	$("#s3").css("background-color","red");
+
+   });
+
+
+		   $("#1").hover(function(){
+						 $("#33").css("background-color", "red");
+					}); 
+					 $("#2").hover(function(){
+						 $("#44").css("background-color", "green");
+					});
+					  $("#3").hover(function(){
+						 $("#11").css("background-color", "yellow");
+					});
+					  $("#4").hover(function(){
+						 $("#22").css("background-color", "orange");
+					});
+
+
+  $("#se1").change(function () {
+
+  	var l=$("#se1").val();
+  	if(l=="p3"){
+  		$("#se2").hide();
+  		$("#se22").hide();
+  		$("#se3").show();
+  		$("#se4").show();
+  	}
+  	else if(l=="p2"){
+  		$("#se2").hide();
+  		$("#se22").show();
+
+  	}
+  });
+   	
+
+      });
+    
+	</script>
+
+</head>
+
+
+<body>
+<p>What is HTU</p>
+<button id="bt1">show</button>
+<div id="is" style="display: none">htu is univ</div>
+<br><br><hr>
+<div>what is jquery?</div>
+<input type="radio" name="A"  id="j1"><span id="s1">JS</span>
+<input type="radio" name="A"  id="j2" ><span id="s2">HTML</span>
+<input type="radio" name="A"  id="j3"><span id="s3">CSS</span>
+ <button id ="bt2">check</button>
+<br><hr>
+<table>
+	<tr>
+		<td id="1">Ramtha    </td>
+		<td id="11"> mountain  </td>
+		
+	</tr>
+	<tr>
+		<td id="2">Irbed     </td>
+		<td id="22">malls</td>
+		
+	</tr>
+	<tr>
+		<td id="3">Salt     </td>
+		<td id="33">kbab</td>
+		
+	</tr>
+	<tr> 
+		<td id="4">Amman    </td>
+		<td id="44">olive</td>
+		
+	</tr>
+</table><br><hr>
+
+
+Country:<select id="se1">
+   
+    <option value="p1"><span id=s9>jordan</span>
+    <option value="p2"><span id=s8>qatar</span>
+    <option value="33"><span id=s7>usa</span>
+    </select>
+
+  <select  id="se2">
+     <option   >amman</option>
+    <option   >jerash</option>
+    <option   >irbed</option>
+</select>
+<select style="display: none" id="se22">
+    <option   >doha</option>
+    <option   >k</option>
+    <option   >M</option>
+    </select>
+  <select style="display: none" id="se3"> 
+    <option   >state</option>
+    <option   ></option>
+    <option   ></option>
+    
+  </select>
+   <select style="display: none" id="se4"> 
+    <option   >state post</option>
+    <option   ></option>
+    <option   ></option>
+   
+    
+  </select>
+
+</body>
+</html>

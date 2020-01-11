@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+</head>
+<body>
+	<div id="results"></div>
+	<form name="quizForm" onsubmit="return submitAnswers()">
+		<label>Where we are ?</label><br>
+		<input type="radio" name="answer1" value="Home">Home<br>
+		<input type="radio" name="answer1" value="University">University<br>
+		<input type="radio" name="answer1" value="Street">Street<br>
+<br><br>
+
+	<input type="Submit" value="submitAnswers" >
+
+	</form>
+
+
+	
+
+ 	<script type="text/javascript">
+ 		function submitAnswers() {
+ 			var form = document.quizForm;
+			var q1 = form.elements['answer1'].value;
+		
+			var mark= 0 ;
+			if(q1 == "University"){
+				mark++;
+			}
+			
+			
+			window.location.href='index6.html?mark='+mark;
+			return false;
+		}
+ 			
+
+ 	</script>
+ </body>
+</html>

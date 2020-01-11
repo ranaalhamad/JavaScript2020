@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	 <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  		  <link rel="stylesheet" type="text/css" href="css/custom.css">
+</head>
+<body>
+<label for="setRows">Rows: </label><input type="text" id="setRows"> <br>
+<label for="setCols">Cols: </label><input type="text" id="setCols"> <br>
+        <input type="button" id="submit" onclick="buildTable();" value="submit">
+           
+            <hr>
+                <div id="tableHolder">
+                   
+                </div>
+
+ <script type="text/javascript">
+	
+function buildTable() {
+    var rows = document.getElementById("setRows").value;
+    var cols = document.getElementById("setCols").value;
+	
+    var table = "<table>";
+    table += "<tbody>";
+    
+    for (i=0;i<rows;i++) {
+     	table += "<tr>";
+        
+        	for (j=0;j<cols;j++) {
+            	table += "<td>&nbsp;</td>";
+            }
+
+     	table += "</tr>";   
+    }
+    
+   	table += "</tbody>";
+   	table += "</table>";
+    
+    document.getElementById("tableHolder").innerHTML=table;
+}
+</script>
+</body>
+</html>

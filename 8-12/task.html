@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<!-- <link rel="stylesheet" type="text/css" href="css.bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css.custom.css"> -->
+</head>
+<body>
+	<p id="demo"></p>
+	
+
+<script type="text/javascript">
+	var currentdate=new Date();
+	day=currentdate.getDate();
+	month=currentdate.getMonth()+1;
+	year=currentdate.getFullYear();
+	document.write(day+"/"+month+"/"+year +"<br>");
+	// document.getElementById("demo").innerHTML=day;
+
+	var currentTime = new Date();
+      hours = currentTime.getHours();
+      minutes = currentTime.getMinutes();
+      seconds = currentTime.getSeconds();
+
+	if (minutes < 10) {
+	 minutes = "0" + minutes;
+  }
+
+	document.write(hours + ":" + minutes + ":" + seconds +"<br>");
+
+var days=["saturday","sunday","monday","muesday","thuresday","friday"];
+document.getElementById("demo").innerHTML=days[currentdate.getDay()];
+
+var arr=currentdate.toDateString();
+console.log(arr);
+arr=arr.split(" ");
+document.write(arr+"<br>");
+
+
+
+document.getElementById("demo").innerHTML=new Date().toLocaleString('default',{month:'short'});
+
+
+
+var date=new Date();
+var dateInMs=date.getTime();
+console.log(dateInMs);
+var y=new Date (dateInMs);
+console.log(y);
+
+
+
+
+</script>
+</body>
+</html>

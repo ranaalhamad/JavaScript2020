@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<form name="frm" onsubmit="return sbmt()">
+		<p id="para"></p>
+		<label>User</label>
+		<input type="text" name="user">
+		<label>password</label>
+		<input type="password" name="pass">
+		<input type="submit" name="" value="submit">
+	</form>
+
+
+
+	<script type="text/javascript">
+		function sbmt(){
+			var form = document.frm;
+			var user = form.elements["user"].value;
+			var pass = form.elements["pass"].value;
+			
+			if(user == "Admin" && pass == "123456"){
+				localStorage.setItem("username", "Admin");
+			var name = localStorage.getItem("username");
+			localStorage.setItem("password", "123456");
+			var password = localStorage.getItem("password");
+				window.location.href="index.html";
+				return false;
+			} else{
+				document.getElementById('para').innerHTML="You are not authorized to access!";
+				document.getElementById('para').style.color="red";
+				return false;
+			}
+		}
+	</script>
+
+</body>
+</html>

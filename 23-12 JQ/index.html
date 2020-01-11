@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="jquery.js"></script>
+
+	<script type="text/javascript">
+		// document.getElementById('first');
+		// $("#first");
+
+		$("document").ready(function(){ 
+
+
+		
+
+
+		$("div:even").css({
+			"font-size":"50px",
+		     "color":"red",
+		     "border":"2px black solid"});
+
+
+			$("#one").html("HTU");({})
+			$("#one").append("welcome"); //in the end
+			$("#one").prepend("to"); //in the first
+             $("#one").before("welcome");
+			$("#one").after("to"); 
+
+
+			$("a").attr("target","_blank");
+
+			// $("p").remove(".test");
+
+
+
+
+			$("#bt1").click(function(){
+				$("div").hide(1000);
+			});
+
+			$("#bt2").click(function(){
+				$("div").show(1000);
+			});
+			$("#bt3").click(function(){
+				$("div").toggle(1000);
+			});
+			$("#bt3").click(function(){
+				$("div").toggle(1000);
+			});
+			$("#bt4").click(function(){
+				$("div").fadeOut(2000);
+			});
+
+		});
+
+	</script>
+</head>
+<body>
+	
+<div id="one">this is first div</div>
+<div id="two">this is first div</div>
+<div >this is first div</div>
+<div >this is first div</div>
+<div >this is first div</div>
+<div >this is first div</div>
+<div >this is first div</div>
+<div >this is first div</div>
+
+
+<a href="https://www.google.com/">google</a>
+
+<button id="bt1">hide</button>
+<button id="bt2">show</button>
+<button id="bt3">toggle</button>
+<button id="bt4">fadeOut</button>
+</body>
+</html>

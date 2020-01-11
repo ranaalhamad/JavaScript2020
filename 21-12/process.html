@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<h1>welcom to process</h1>
+<script type="text/javascript">
+	var url_string=window.location;
+	var url=new URL(url_string);
+
+	var name=url.searchParams.get("user_name");
+	var id=url.searchParams.get("user_id");
+	alert(name+" "+id);
+</script>
+</body>
+</html>
